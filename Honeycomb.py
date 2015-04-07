@@ -32,14 +32,17 @@ def walks(x,y,s):
 	return field[x][y][s];
 	
 
-numberOfRuns = int(input('Number of program runs:'))	
+#numberOfRuns = int(input('Number of program runs:'))	
+numberOfRuns = int(input())
 
 while numberOfRuns > 0:
 	while n<1 or n>15:
-		n = int(input('Enter the number of steps (between 1 and 14): '))
-	print ("Number of steps, n = " + str(n))
+		#n = int(input('Enter the number of steps (between 1 and 14): '))
+		n = int(input())
+	#print ("Number of steps, n = " + str(n))
 	#(15,15) is the middle of the field
-	print ("Number of different walks: " + str(walks(15,15,n)))
+	#print ("Number of different walks: " + str(walks(15,15,n)))
+	print (str(walks(15,15,n)))
 	n = 0
 	numberOfRuns - 1
 
